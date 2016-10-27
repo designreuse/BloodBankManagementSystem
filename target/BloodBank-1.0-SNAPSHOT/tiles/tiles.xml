@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC 
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="masterPage" template="/views/layouts/master.jsp" >
+        <put-attribute name="header" value="/views/inc/header.jsp" />
+        <put-attribute name="sidebar" value="/views/inc/sidebar.jsp" />
+        <put-attribute name="footer" value="/views/inc/footer.jsp" />
+        <put-attribute name="rightSidebar" value="/views/inc/rightSidebar.jsp" />
+    </definition>
+    <definition name="loginPage" template="/views/layouts/loginTemplate.jsp" >
+    </definition>        
+       
+    <definition name="login/index" extends="loginPage">
+        <put-attribute name="content" value="/views/login/index.jsp" />
+    </definition>
+    <!--    <definition name="login/register" extends="loginPage">
+        <put-attribute name="content" value="/views/login/register.jsp" />
+    </definition>-->
+    
+    
+    <definition name="home/index" extends="masterPage">
+        <put-attribute name="content" value="/views/home/index.jsp" />
+    </definition>       
+        
+
+    <definition name="donor/index" extends="masterPage">
+        <put-attribute name="content" value="/views/donor/index.jsp" />
+    </definition>     
+    <definition name="donor/create" extends="masterPage">
+        <put-attribute name="content" value="/views/donor/create.jsp" />
+    </definition>
+    <definition name="donor/show" extends="masterPage">
+        <put-attribute name="content" value="/views/donor/show.jsp" />
+    </definition>
+    <definition name="donor/edit" extends="masterPage">
+        <put-attribute name="content" value="/views/donor/edit.jsp" />
+    </definition>
+    
+        
+    <definition name="aboGroupinng/index" extends="masterPage">
+        <put-attribute name="content" value="/views/aboGroupinng/index.jsp" />
+    </definition>     
+    <definition name="aboGroupinng/create" extends="masterPage">
+        <put-attribute name="content" value="/views/aboGroupinng/create.jsp" />
+    </definition>
+    <definition name="aboGroupinng/show" extends="masterPage">
+        <put-attribute name="content" value="/views/aboGroupinng/show.jsp" />
+    </definition>
+    <definition name="aboGroupinng/edit" extends="masterPage">
+        <put-attribute name="content" value="/views/aboGroupinng/edit.jsp" />
+    </definition> 
+    
+      
+    <definition name="bloodBag/collectBlood" extends="masterPage">
+        <put-attribute name="content" value="/views/bloodBag/collectBlood.jsp" />
+    </definition> 
+    <definition name="bloodBag/stock" extends="masterPage">
+        <put-attribute name="content" value="/views/bloodBag/stock.jsp" />
+    </definition>
+    <definition name="bloodBag/edit" extends="masterPage">
+        <put-attribute name="content" value="/views/bloodBag/edit.jsp" />
+    </definition>    
+          
+              
+	
+</tiles-definitions>
